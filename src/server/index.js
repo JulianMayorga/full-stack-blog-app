@@ -59,4 +59,4 @@ app.use((req, res) => {
 
 });
 
-app.listen(parseInt(KYT.SERVER_PORT || process.env.PORT, 10));
+app.listen(parseInt(process.env.PORT || KYT.SERVER_PORT, 10));
