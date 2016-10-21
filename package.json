@@ -15,7 +15,8 @@
     "lint-style": "kyt lint-style",
     "proto": "kyt proto",
     "kyt:help": "kyt --help",
-    "deploy": "node_modules/.bin/now -e API_URL=https://api.fullstackblog.net"
+    "deploy": "node_modules/.bin/now -e API_URL=https://api.fullstackblog.net",
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "ISC",
