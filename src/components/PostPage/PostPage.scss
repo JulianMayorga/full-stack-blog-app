@@ -1,0 +1,9 @@
+.PostPage {
+  display: flex;
+  margin: 6rem;
+  flex-direction: column;
+}
+
+.PostPage :global(.megadraft) :global(.sidebar) {
+  display: none;
+}

@@ -1,0 +1,24 @@
+.PostItem {
+    display: flex;
+    margin: 3rem;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.Title {
+    color: black;
+}
+
+.Title:hover {
+    outline: 0;
+}
+
+.Date {
+    color: grey;
+}
+
+.ReadMore {
+    margin: 15px;
+    color: black;
+}

@@ -1,0 +1,19 @@
+:global {
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        padding-top: 5.5rem;
+        font-family: monospace, Helvetica, sans-serif;
+    }
+
+    [data-text="true"] {
+        font-family: monospace, Helvetica, sans-serif;
+    }
+
+    .megadraft-editor h2:first-child {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+}

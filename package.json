@@ -1,0 +1,46 @@
+{
+  "name": "full-stack-blog-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "API_URL=http://localhost:3030 kyt dev",
+    "build": "kyt build",
+    "start": "kyt start",
+    "kyt:test": "kyt test",
+    "test-watch": "kyt test -- --watch",
+    "test-coverage": "kyt test -- --coverage",
+    "lint": "kyt lint",
+    "lint-style": "kyt lint-style",
+    "proto": "kyt proto",
+    "kyt:help": "kyt --help",
+    "deploy": "node_modules/.bin/now -e API_URL=https://api.fullstackblog.net"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.1",
+    "classnames": "^2.2.5",
+    "compression": "^1.6.2",
+    "electrode-redux-router-engine": "^1.2.2",
+    "enzyme": "^2.4.1",
+    "express": "^4.14.0",
+    "kyt": "^0.2.2",
+    "lodash": "^4.16.4",
+    "megadraft": "^0.3.4",
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.1",
+    "react-router-transition": "0.0.6",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "now": "^0.25.1"
+  },
+  "engines": {
+    "node": "6.8.0"
+  }
+}
