@@ -9,6 +9,10 @@ import combinedReducers from '../reducers';
 
 import './base.scss';
 
+function scrollToTop() {
+  return [0, 0];
+}
+
 // Import pre-setup state from server and create a store with it
 const preloadedState = window.__PRELOADED_STATE__;
 const store = createStore(combinedReducers, preloadedState);
@@ -17,7 +21,7 @@ const store = createStore(combinedReducers, preloadedState);
 function Root() {
   return (
     <Provider store={store}>
-      <Router history={browserHistory} routes={routes} render={applyRouterMiddleware(useScroll())} />
+      <Router history={browserHistory} routes={routes} render={applyRouterMiddleware(useScroll(scrollToTop))} />
     </Provider>
   );
 }
