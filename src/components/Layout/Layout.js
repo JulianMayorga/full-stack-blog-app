@@ -1,20 +1,22 @@
 import React from 'react';
 import classNames from 'classnames';
+import throttle from 'lodash/throttle';
 
 import Header from '../Header';
+import Footer from '../Footer';
 
 import classes from './Layout.scss';
 
 function onScroll(onDown, onUp) {
   let lastScrollTop = 0;
-  window.onscroll = (ev) => {
+  window.onscroll = throttle((ev) => {
     if (window.scrollY > lastScrollTop) {
       onDown(ev);
     } else if (window.scrollY < lastScrollTop) {
       onUp(ev);
     }
     lastScrollTop = window.scrollY;
-  };
+  });
 }
 
 export default class Layout extends React.Component {
@@ -42,6 +44,7 @@ export default class Layout extends React.Component {
       <div className={classNames(classes.Layout, this.state.direction)}>
         <Header />
         {this.props.children}
+        <Footer />
       </div>
     );
   }
