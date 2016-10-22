@@ -1,24 +1,43 @@
+@import '../../client/base';
+
 .PostItem {
     display: flex;
-    margin: 3rem;
     justify-content: space-between;
     align-items: baseline;
     flex-direction: column;
+    border-color: $posts-header;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.PostItem:first-of-type {
+    margin-top: 2rem;
+}
+
+.Header {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
 }
 
 .Title {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background-color: $posts-header;
+    margin: 0;
+}
+
+.Link {
     color: black;
 }
 
-.Title:hover {
+.Link:hover {
     outline: 0;
 }
 
-.Date {
-    color: grey;
-}
-
 .ReadMore {
-    margin: 15px;
     color: black;
+    align-self: flex-end;
 }

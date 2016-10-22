@@ -1,17 +1,5 @@
-.NewPostPage {
-    margin: 10rem;
-}
-
 .Button {
-  color: white;
-  background-color: black;
   align-self: flex-end;
-}
-
-.Button:hover {
-  color: black;
-  background-color: white;
-  border-color: black;
 }
 
 .NewPostPage :global(.megadraft) :global(.sidebar) {
