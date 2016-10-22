@@ -1,10 +1,10 @@
 import React from 'react';
-import Router from 'react-router/lib/Router';
-import browserHistory from 'react-router/lib/browserHistory';
-import routes from '../routes';
-
+import { applyRouterMiddleware, browserHistory, Router } from 'react-router';
+import { useScroll } from 'react-router-scroll';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+
+import routes from '../routes';
 import combinedReducers from '../reducers';
 
 import './base.scss';
@@ -17,7 +17,7 @@ const store = createStore(combinedReducers, preloadedState);
 function Root() {
   return (
     <Provider store={store}>
-      <Router history={browserHistory} routes={routes} />
+      <Router history={browserHistory} routes={routes} render={applyRouterMiddleware(useScroll())} />
     </Provider>
   );
 }
