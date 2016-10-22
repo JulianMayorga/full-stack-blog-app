@@ -11,6 +11,11 @@
     right: 0;
     left: 0;
     z-index: 1030;
+    transition: height .05s;
+}
+
+:global(.down) :local(.Header) {
+    height: 10vh;
 }
 
 .Title a {

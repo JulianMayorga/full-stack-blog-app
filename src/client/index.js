@@ -8,8 +8,8 @@ const root = document.querySelector('#root');
 
 const mount = (RootComponent) => {
   render(
-    <AppContainer>
-      <RootComponent />
+    <AppContainer onScroll={() => console.log('scrolling')}>
+      <RootComponent onScroll={() => console.log('scrolling')} />
     </AppContainer>,
     root
   );

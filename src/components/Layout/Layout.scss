@@ -1,0 +1,8 @@
+.Layout {
+    padding-top: 20vh;
+    font-family: monospace, Helvetica, sans-serif;
+}
+
+:global(.down):local(.Layout) {
+    padding-top: 10vh;
+}

@@ -11,7 +11,7 @@ export default class PostPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: editorStateFromRaw(props.post.editorState)
+      value: editorStateFromRaw(props.post.editorState),
     };
     this.onChange = this.onChange.bind(this);
   }
