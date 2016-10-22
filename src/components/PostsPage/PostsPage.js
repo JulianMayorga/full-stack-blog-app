@@ -5,6 +5,8 @@ import PostItem from '../PostItem';
 import NewPostButton from '../NewPostButton';
 import { post as postPropType } from '../propTypes';
 
+import classes from './PostsPage.scss';
+
 export default class PostsPage extends React.Component {
   componentWillMount() {
     this.props.fetchPosts();
@@ -14,7 +16,9 @@ export default class PostsPage extends React.Component {
       <section>
         <NewPostButton />
         <RouteTransition {...presets.pop} pathname={this.props.location.pathname}>
-          {this.props.posts.map(post => <PostItem key={post._id} post={post} />)}
+          <section className={classes.PostsItems}>
+            {this.props.posts.map(post => <PostItem key={post._id} post={post} />)}
+          </section>
         </RouteTransition>
       </section>
     );

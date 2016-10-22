@@ -8,6 +8,9 @@
     border-color: $posts-header;
     margin-left: 2rem;
     margin-right: 2rem;
+    width: 100%;
+    max-width: 70%;
+    align-self: center;
 }
 
 .PostItem:first-of-type {
