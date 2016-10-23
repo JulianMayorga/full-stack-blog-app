@@ -1,4 +1,4 @@
-$posts-header: dodgerblue;
+@import './variables';
 
 :global {
     html {
@@ -25,13 +25,12 @@ $posts-header: dodgerblue;
         height: 20vh;
     }
 
-    .megadraft-editor [data-contents="true"] :not(:first-child) {
+    .megadraft-editor div[data-contents="true"] > :not(:first-child) {
         padding-left: 5rem;
         padding-right: 5rem;
     }
 
-    .megadraft-editor [data-contents="true"]:last-child {
+    .megadraft-editor div[data-contents="true"] > :last-child {
         padding-bottom: 5rem;
     }
-
 }
