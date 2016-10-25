@@ -21,10 +21,6 @@
         transition: height .5s;
     }
 
-    .down .megadraft-editor h2:first-child {
-        height: 20vh;
-    }
-
     .megadraft-editor div[data-contents="true"] > :not(:first-child) {
         padding-left: 5rem;
         padding-right: 5rem;
